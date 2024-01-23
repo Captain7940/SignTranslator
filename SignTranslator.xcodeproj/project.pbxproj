@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9D6CE682B52D82A004C09AF /* SignTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE672B52D82A004C09AF /* SignTranslatorApp.swift */; };
+		E9D6CE6A2B52D82A004C09AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE692B52D82A004C09AF /* ContentView.swift */; };
+		E9D6CE6C2B52D831004C09AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D6CE6B2B52D831004C09AF /* Assets.xcassets */; };
+		E9D6CE702B52D831004C09AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D6CE6F2B52D831004C09AF /* Preview Assets.xcassets */; };
+		E9D6CE7A2B52D832004C09AF /* SignTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */; };
+		E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */; };
+		E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9D6CE762B52D832004C09AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D6CE5C2B52D82A004C09AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D6CE632B52D82A004C09AF;
+			remoteInfo = SignTranslator;
+		};
+		E9D6CE802B52D832004C09AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D6CE5C2B52D82A004C09AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D6CE632B52D82A004C09AF;
+			remoteInfo = SignTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9D6CE642B52D82A004C09AF /* SignTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D6CE672B52D82A004C09AF /* SignTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorApp.swift; sourceTree = "<group>"; };
+		E9D6CE692B52D82A004C09AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9D6CE6B2B52D831004C09AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D6CE6D2B52D831004C09AF /* SignTranslator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignTranslator.entitlements; sourceTree = "<group>"; };
+		E9D6CE6F2B52D831004C09AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9D6CE752B52D832004C09AF /* SignTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorTests.swift; sourceTree = "<group>"; };
+		E9D6CE7F2B52D832004C09AF /* SignTranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignTranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorUITests.swift; sourceTree = "<group>"; };
+		E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9D6CE612B52D82A004C09AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE722B52D832004C09AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE7C2B52D832004C09AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9D6CE5B2B52D82A004C09AF = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE662B52D82A004C09AF /* SignTranslator */,
+				E9D6CE782B52D832004C09AF /* SignTranslatorTests */,
+				E9D6CE822B52D832004C09AF /* SignTranslatorUITests */,
+				E9D6CE652B52D82A004C09AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9D6CE652B52D82A004C09AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE642B52D82A004C09AF /* SignTranslator.app */,
+				E9D6CE752B52D832004C09AF /* SignTranslatorTests.xctest */,
+				E9D6CE7F2B52D832004C09AF /* SignTranslatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9D6CE662B52D82A004C09AF /* SignTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE672B52D82A004C09AF /* SignTranslatorApp.swift */,
+				E9D6CE692B52D82A004C09AF /* ContentView.swift */,
+				E9D6CE6B2B52D831004C09AF /* Assets.xcassets */,
+				E9D6CE6D2B52D831004C09AF /* SignTranslator.entitlements */,
+				E9D6CE6E2B52D831004C09AF /* Preview Content */,
+			);
+			path = SignTranslator;
+			sourceTree = "<group>";
+		};
+		E9D6CE6E2B52D831004C09AF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE6F2B52D831004C09AF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9D6CE782B52D832004C09AF /* SignTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */,
+			);
+			path = SignTranslatorTests;
+			sourceTree = "<group>";
+		};
+		E9D6CE822B52D832004C09AF /* SignTranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */,
+				E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */,
+			);
+			path = SignTranslatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9D6CE632B52D82A004C09AF /* SignTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D6CE892B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslator" */;
+			buildPhases = (
+				E9D6CE602B52D82A004C09AF /* Sources */,
+				E9D6CE612B52D82A004C09AF /* Frameworks */,
+				E9D6CE622B52D82A004C09AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignTranslator;
+			productName = SignTranslator;
+			productReference = E9D6CE642B52D82A004C09AF /* SignTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9D6CE742B52D832004C09AF /* SignTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D6CE8C2B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslatorTests" */;
+			buildPhases = (
+				E9D6CE712B52D832004C09AF /* Sources */,
+				E9D6CE722B52D832004C09AF /* Frameworks */,
+				E9D6CE732B52D832004C09AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D6CE772B52D832004C09AF /* PBXTargetDependency */,
+			);
+			name = SignTranslatorTests;
+			productName = SignTranslatorTests;
+			productReference = E9D6CE752B52D832004C09AF /* SignTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9D6CE7E2B52D832004C09AF /* SignTranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D6CE8F2B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslatorUITests" */;
+			buildPhases = (
+				E9D6CE7B2B52D832004C09AF /* Sources */,
+				E9D6CE7C2B52D832004C09AF /* Frameworks */,
+				E9D6CE7D2B52D832004C09AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D6CE812B52D832004C09AF /* PBXTargetDependency */,
+			);
+			name = SignTranslatorUITests;
+			productName = SignTranslatorUITests;
+			productReference = E9D6CE7F2B52D832004C09AF /* SignTranslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D6CE5C2B52D82A004C09AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E9D6CE632B52D82A004C09AF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E9D6CE742B52D832004C09AF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9D6CE632B52D82A004C09AF;
+					};
+					E9D6CE7E2B52D832004C09AF = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9D6CE632B52D82A004C09AF;
+					};
+				};
+			};
+			buildConfigurationList = E9D6CE5F2B52D82A004C09AF /* Build configuration list for PBXProject "SignTranslator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9D6CE5B2B52D82A004C09AF;
+			productRefGroup = E9D6CE652B52D82A004C09AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9D6CE632B52D82A004C09AF /* SignTranslator */,
+				E9D6CE742B52D832004C09AF /* SignTranslatorTests */,
+				E9D6CE7E2B52D832004C09AF /* SignTranslatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D6CE622B52D82A004C09AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D6CE702B52D831004C09AF /* Preview Assets.xcassets in Resources */,
+				E9D6CE6C2B52D831004C09AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE732B52D832004C09AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE7D2B52D832004C09AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9D6CE602B52D82A004C09AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D6CE6A2B52D82A004C09AF /* ContentView.swift in Sources */,
+				E9D6CE682B52D82A004C09AF /* SignTranslatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE712B52D832004C09AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D6CE7A2B52D832004C09AF /* SignTranslatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D6CE7B2B52D832004C09AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */,
+				E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9D6CE772B52D832004C09AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D6CE632B52D82A004C09AF /* SignTranslator */;
+			targetProxy = E9D6CE762B52D832004C09AF /* PBXContainerItemProxy */;
+		};
+		E9D6CE812B52D832004C09AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D6CE632B52D82A004C09AF /* SignTranslator */;
+			targetProxy = E9D6CE802B52D832004C09AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E9D6CE872B52D832004C09AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9D6CE882B52D832004C09AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E9D6CE8A2B52D832004C09AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignTranslator/SignTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignTranslator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9D6CE8B2B52D832004C09AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignTranslator/SignTranslator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignTranslator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9D6CE8D2B52D832004C09AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignTranslator";
+			};
+			name = Debug;
+		};
+		E9D6CE8E2B52D832004C09AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignTranslator";
+			};
+			name = Release;
+		};
+		E9D6CE902B52D832004C09AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignTranslator;
+			};
+			name = Debug;
+		};
+		E9D6CE912B52D832004C09AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SignTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignTranslator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9D6CE5F2B52D82A004C09AF /* Build configuration list for PBXProject "SignTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D6CE872B52D832004C09AF /* Debug */,
+				E9D6CE882B52D832004C09AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D6CE892B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D6CE8A2B52D832004C09AF /* Debug */,
+				E9D6CE8B2B52D832004C09AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D6CE8C2B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D6CE8D2B52D832004C09AF /* Debug */,
+				E9D6CE8E2B52D832004C09AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D6CE8F2B52D832004C09AF /* Build configuration list for PBXNativeTarget "SignTranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D6CE902B52D832004C09AF /* Debug */,
+				E9D6CE912B52D832004C09AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D6CE5C2B52D82A004C09AF /* Project object */;
+}
