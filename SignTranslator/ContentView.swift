@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+     TabView {
+
+     SignTranslateView( classifier: ImageClassifier()).tabItem ({
+     Image(systemName: "hand.raised.fill")
+     Text("Translator")
+     }).tag(0)
+
+     LocationView().tabItem ({
+     Image(systemName: "mappin.and.ellipse")
+     Text("Location")
+     }).tag(1)
+
+     }
+
+        
+     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
