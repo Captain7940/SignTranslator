@@ -20,6 +20,7 @@ struct Classifier {
  }
 
  let request = VNCoreMLRequest(model: model)
+     request.imageCropAndScaleOption = .scaleFill
 
  let handler = VNImageRequestHandler(ciImage: ciImage, options: [:])
 
