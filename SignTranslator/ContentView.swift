@@ -10,23 +10,18 @@ import SwiftUI
 struct ContentView: View {
 
     var body: some View {
-     TabView {
+        TabView {
+        ARViewControllerContainer().edgesIgnoringSafeArea(.all).tabItem ({
+        Image(systemName: "hand.raised.fill")
+        Text("Translator")
+        }).tag(0)
 
-     SignTranslateView( classifier: ImageClassifier()).tabItem ({
-     Image(systemName: "hand.raised.fill")
-     Text("Translator")
-     }).tag(0)
-
-     LocationView().tabItem ({
-     Image(systemName: "mappin.and.ellipse")
-     Text("Location")
-     }).tag(1)
-
+        LocationView().tabItem ({
+        Image(systemName: "mappin.and.ellipse")
+        Text("Location")
+        }).tag(1)
+        }
      }
-
-        
-     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
