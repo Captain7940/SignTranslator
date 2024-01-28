@@ -13,7 +13,10 @@ import SceneKit
 
 class ARViewController: UIViewController,ARSessionDelegate {
 
-//    var arView: ARView!
+    private(set) var results: String?
+    var textLabel: UILabel!
+    var clearButton: UIButton!
+    //    var arView: ARView!
     var arScnView: ARSCNView!
     var frameCounter: Int = 0
     let handPosePredictionInterval: Int = 30
@@ -21,9 +24,6 @@ class ARViewController: UIViewController,ARSessionDelegate {
     var viewWidth:Int = 0
     var viewHeight:Int = 0
     var currentHandPoseObservation: VNHumanHandPoseObservation?
-    var heartNode: SCNNode!
-    var starNodes: [SCNNode] = []
-    var isEffectAppearing = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +35,39 @@ class ARViewController: UIViewController,ARSessionDelegate {
         let config = ARFaceTrackingConfiguration()
         arScnView.session.delegate = self
         arScnView.session.run(config, options: [.removeExistingAnchors])
-        prepareEffects()
-       
+
+        // Initialize text field
+        textLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        textLabel.textAlignment = .center
+        textLabel.textColor = .white
+        textLabel.backgroundColor = .black
+        textLabel.text = "Result"
+
+        // Initialize button
+        let clearButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        clearButton.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
+        clearButton.backgroundColor = .blue
+        clearButton.tintColor = .white
+        clearButton.layer.cornerRadius = 6
+        clearButton.addTarget(self, action:#selector(clearText), for: .touchUpInside)
+
+        // Create an HStack to hold the label and button
+        let hStack = UIStackView(frame: CGRect(x: 20, y: 50, width: view.bounds.width - 40, height: 100))
+        hStack.axis = .horizontal
+        hStack.alignment = .center
+        hStack.distribution = .fill
+        hStack.spacing = 10
+
+        // Add the label and button to the HStack
+        hStack.addArrangedSubview(textLabel)
+        hStack.addArrangedSubview(clearButton)
+
+        // Add the HStack to the view
+        view.addSubview(hStack)
+    }
+
+    @objc func clearText() {
+        textLabel.text = "" 
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -55,6 +86,7 @@ class ARViewController: UIViewController,ARSessionDelegate {
             }
             
             guard let handPoses = handPoseRequest.results, !handPoses.isEmpty else { return }
+            
             guard let observation = handPoses.first else { return }
             currentHandPoseObservation = observation
             frameCounter += 1
@@ -63,6 +95,7 @@ class ARViewController: UIViewController,ARSessionDelegate {
                 makePrediction(handPoseObservation: observation)
             }
         }
+
     }
     
     func makePrediction(handPoseObservation: VNHumanHandPoseObservation) {
@@ -75,63 +108,23 @@ class ARViewController: UIViewController,ARSessionDelegate {
             if confidence > 0.9 {
                 DispatchQueue.main.async { [self] in
                     switch label {
-                    case "fingerHeart":displayFingerHeartEffect()
-                    case "peace":displayPeaceEffect()
+                    case "A":displayFingerHeartEffect()
+                    case "B":displayPeaceEffect()
                     default : break
                     }
+                    
                 }
             }
         } catch {
             print("Prediction error")
         }
     }
-    
     func displayFingerHeartEffect(){
-        guard !isEffectAppearing else { return }
-        isEffectAppearing = true
-        guard let handPoseObservation = currentHandPoseObservation,let indexFingerPosition = getHandPosition(handPoseObservation: handPoseObservation) else {return}
-        heartNode.position = indexFingerPosition
-        let fadeIn = SCNAction.fadeIn(duration: 0.2)
-        let up = SCNAction.move(by: SCNVector3(x: 0, y: 0.1, z: 0), duration: 0.1)
-        let shakeHalfRight = SCNAction.rotate(by: -0.3, around: SCNVector3(x: 0, y: 0, z: 1), duration: 0.025)
-        let shakeLeft = SCNAction.rotate(by: 0.6, around: SCNVector3(x: 0, y: 0, z: 1), duration: 0.05)
-        let shakeRight = SCNAction.rotate(by: -0.6, around: SCNVector3(x: 0, y: 0, z: 1), duration: 0.05)
-        let shakeHalfLeft = SCNAction.rotate(by: 0.3, around: SCNVector3(x: 0, y: 0, z: 1), duration: 0.025)
-        let shake = SCNAction.sequence([shakeLeft,shakeRight])
-        let fadeOut = SCNAction.fadeOut(duration: 1)
-        let shakeRepeat = SCNAction.sequence([shakeHalfRight,shake,shake,shake,shake,shakeHalfLeft])
-        let switchEffectAppearing = SCNAction.run { node in
-            self.isEffectAppearing = false
-        }
-        heartNode.runAction(.sequence([fadeIn,up,shakeRepeat,fadeOut,switchEffectAppearing]))
+        
     }
     
     func displayPeaceEffect(){
-        guard !isEffectAppearing else { return }
-        isEffectAppearing = true
-        guard let handPoseObservation = currentHandPoseObservation,let indexFingerPosition = getHandPosition(handPoseObservation: handPoseObservation) else {return}
         
-        starNodes.forEach { star in
-            star.opacity = 1
-//            star.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(geometry: star.geometry ?? SCNBox(width: 0.01, height: 0.01, length: 0.01, chamferRadius: 0), options: [:]))
-            star.position = indexFingerPosition
-            let randomX = Float.random(in: -0.05...0.05)
-            let randomY = Float.random(in: 0...0.05)
-            let randomZ = Float.random(in: -0.05...0.05)
-            let fadeIn = SCNAction.fadeIn(duration: 0.1)
-            let move = SCNAction.move(by: SCNVector3(x: randomX, y: randomY, z: randomZ), duration: 0.5)
-            move.timingMode = .easeInEaseOut
-            let fadeOut = SCNAction.fadeOut(duration: 1)
-            let switchEffectAppearing = SCNAction.run { node in
-                self.isEffectAppearing = false
-            }
-
-            star.runAction(.sequence([fadeIn, move, fadeOut, switchEffectAppearing]))
-//            star.physicsBody?.applyForce(SCNVector3(x: randomX, y: randomY, z: randomZ), asImpulse: true)
-        }
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { timer in
-            self.isEffectAppearing = false
-        }
     }
     
     func getHandPosition(handPoseObservation: VNHumanHandPoseObservation) -> SCNVector3? {
@@ -149,20 +142,5 @@ class ARViewController: UIViewController,ARSessionDelegate {
         return finalPosition
     }
     
-    func prepareEffects() {
-        let scene = SCNScene(named: "art.scnassets/Effects.scn")!
-        guard let heart = scene.rootNode.childNode(withName: "Love reference", recursively: true)?.clone() else {return}
-        heart.scale = SCNVector3(x: 0.0005, y: 0.0005, z: 0.0005)
-        heartNode = heart
-        arScnView.scene.rootNode.addChildNode(heart)
-        heart.opacity = 0
-        
-        for _ in 0...7 {
-            guard let star = scene.rootNode.childNode(withName: "star", recursively: true)?.clone() else {return}
-            star.scale = SCNVector3(x: 0.002, y: 0.002, z: 0.002)
-            starNodes.append(star)
-            arScnView.scene.rootNode.addChildNode(star)
-            star.opacity = 0
-        }
-    }
+
 }
