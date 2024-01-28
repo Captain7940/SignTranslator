@@ -37,37 +37,40 @@ class ARViewController: UIViewController,ARSessionDelegate {
         arScnView.session.run(config, options: [.removeExistingAnchors])
 
         // Initialize text field
-        textLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        textLabel = UILabel(frame: CGRect(x: 20, y: 50, width: view.bounds.width - 40, height: 100))
         textLabel.textAlignment = .center
         textLabel.textColor = .white
         textLabel.backgroundColor = .black
-        textLabel.text = "Result"
+        textLabel.text = ""
+        textLabel.numberOfLines = 4
+        textLabel.lineBreakMode = .byWordWrapping
 
         // Initialize button
-        let clearButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        let clearButton = UIButton(frame: CGRect(x: 20, y:150, width: 40, height: 40))
         clearButton.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
         clearButton.backgroundColor = .blue
         clearButton.tintColor = .white
         clearButton.layer.cornerRadius = 6
         clearButton.addTarget(self, action:#selector(clearText), for: .touchUpInside)
 
-        // Create an HStack to hold the label and button
-        let hStack = UIStackView(frame: CGRect(x: 20, y: 50, width: view.bounds.width - 40, height: 100))
-        hStack.axis = .horizontal
-        hStack.alignment = .center
-        hStack.distribution = .fill
-        hStack.spacing = 10
+//        // Create an HStack to hold the label and button
+//        let hStack = UIStackView(frame: CGRect(x: 20, y: 40, width: view.bounds.width - 40, height: 100))
+//        hStack.axis = .horizontal
+//        hStack.alignment = .center
+//        hStack.distribution = .fill
+//        hStack.spacing = 10
+//
+//        // Add the label and button to the HStack
+//        hStack.addArrangedSubview(textLabel)
+//        hStack.addArrangedSubview(clearButton)
 
-        // Add the label and button to the HStack
-        hStack.addArrangedSubview(textLabel)
-        hStack.addArrangedSubview(clearButton)
-
-        // Add the HStack to the view
-        view.addSubview(hStack)
+        // Add the label and button to the view
+        view.addSubview(textLabel)
+        view.addSubview(clearButton)
     }
 
     @objc func clearText() {
-        textLabel.text = "" 
+        textLabel.text = ""
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -107,24 +110,21 @@ class ARViewController: UIViewController,ARSessionDelegate {
             print("label:\(prediction.label)\nconfidence:\(confidence)")
             if confidence > 0.9 {
                 DispatchQueue.main.async { [self] in
-                    switch label {
-                    case "A":displayFingerHeartEffect()
-                    case "B":displayPeaceEffect()
-                    default : break
+   
+                    if label == "space" {
+                        textLabel.text = textLabel.text! + " "
+                    } else if label == "del" && textLabel.text! != ""{
+                        textLabel.text!.removeLast()
+                    } else if label == "del" && textLabel.text! == ""{
+                        
+                    }else {
+                        textLabel.text = textLabel.text! + label
                     }
-                    
                 }
             }
         } catch {
             print("Prediction error")
         }
-    }
-    func displayFingerHeartEffect(){
-        
-    }
-    
-    func displayPeaceEffect(){
-        
     }
     
     func getHandPosition(handPoseObservation: VNHumanHandPoseObservation) -> SCNVector3? {
@@ -141,6 +141,5 @@ class ARViewController: UIViewController,ARSessionDelegate {
         print(finalPosition)
         return finalPosition
     }
-    
 
 }

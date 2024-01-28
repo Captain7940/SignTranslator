@@ -10,12 +10,6 @@
 		E91F2E4B2B60D98B00D2C135 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
 		E9489DCD2B65767900B75080 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9489DCC2B65767900B75080 /* ARViewController.swift */; };
 		E9489DCF2B65768C00B75080 /* ARViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9489DCE2B65768C00B75080 /* ARViewControllerContainer.swift */; };
-		E9489DD12B65787D00B75080 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E9489DD02B65787D00B75080 /* art.scnassets */; };
-		E97E2FCC2B62689800408F63 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E2FCB2B62689800408F63 /* ImageClassifier.swift */; };
-		E97E2FCE2B6268CD00408F63 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E2FCD2B6268CD00408F63 /* Classifier.swift */; };
-		E97E2FD02B6268F600408F63 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E2FCF2B6268F600408F63 /* ImagePicker.swift */; };
-		E97E2FD22B6269DA00408F63 /* SignTranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E2FD12B6269DA00408F63 /* SignTranslateView.swift */; };
-		E97E2FD42B626C5900408F63 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E97E2FD32B626C5900408F63 /* MobileNetV2.mlmodel */; };
 		E994FF592B64FB3D00E134D8 /* SignLanguageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E994FF582B64FB3D00E134D8 /* SignLanguageClassifier.mlmodel */; };
 		E9D6CE682B52D82A004C09AF /* SignTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE672B52D82A004C09AF /* SignTranslatorApp.swift */; };
 		E9D6CE6A2B52D82A004C09AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE692B52D82A004C09AF /* ContentView.swift */; };
@@ -47,12 +41,6 @@
 		E91F2E4A2B60D98B00D2C135 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E9489DCC2B65767900B75080 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		E9489DCE2B65768C00B75080 /* ARViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewControllerContainer.swift; sourceTree = "<group>"; };
-		E9489DD02B65787D00B75080 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		E97E2FCB2B62689800408F63 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
-		E97E2FCD2B6268CD00408F63 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
-		E97E2FCF2B6268F600408F63 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		E97E2FD12B6269DA00408F63 /* SignTranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslateView.swift; sourceTree = "<group>"; };
-		E97E2FD32B626C5900408F63 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = SignTranslator/MobileNetV2.mlmodel; sourceTree = SOURCE_ROOT; };
 		E994FF582B64FB3D00E134D8 /* SignLanguageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SignLanguageClassifier.mlmodel; sourceTree = "<group>"; };
 		E9D6CE642B52D82A004C09AF /* SignTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6CE672B52D82A004C09AF /* SignTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorApp.swift; sourceTree = "<group>"; };
@@ -121,11 +109,6 @@
 				E9D6CE6D2B52D831004C09AF /* SignTranslator.entitlements */,
 				E9D6CE6E2B52D831004C09AF /* Preview Content */,
 				E91F2E4A2B60D98B00D2C135 /* LocationView.swift */,
-				E97E2FCB2B62689800408F63 /* ImageClassifier.swift */,
-				E97E2FCD2B6268CD00408F63 /* Classifier.swift */,
-				E97E2FCF2B6268F600408F63 /* ImagePicker.swift */,
-				E97E2FD12B6269DA00408F63 /* SignTranslateView.swift */,
-				E97E2FD32B626C5900408F63 /* MobileNetV2.mlmodel */,
 				E994FF582B64FB3D00E134D8 /* SignLanguageClassifier.mlmodel */,
 				E9489DCC2B65767900B75080 /* ARViewController.swift */,
 				E9489DCE2B65768C00B75080 /* ARViewControllerContainer.swift */,
@@ -136,7 +119,6 @@
 		E9D6CE6E2B52D831004C09AF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E9489DD02B65787D00B75080 /* art.scnassets */,
 				E9D6CE6F2B52D831004C09AF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -264,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D6CE702B52D831004C09AF /* Preview Assets.xcassets in Resources */,
-				E9489DD12B65787D00B75080 /* art.scnassets in Resources */,
 				E9D6CE6C2B52D831004C09AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,15 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97E2FCC2B62689800408F63 /* ImageClassifier.swift in Sources */,
 				E994FF592B64FB3D00E134D8 /* SignLanguageClassifier.mlmodel in Sources */,
-				E97E2FD22B6269DA00408F63 /* SignTranslateView.swift in Sources */,
-				E97E2FCE2B6268CD00408F63 /* Classifier.swift in Sources */,
 				E9D6CE6A2B52D82A004C09AF /* ContentView.swift in Sources */,
-				E97E2FD42B626C5900408F63 /* MobileNetV2.mlmodel in Sources */,
 				E91F2E4B2B60D98B00D2C135 /* LocationView.swift in Sources */,
 				E9D6CE682B52D82A004C09AF /* SignTranslatorApp.swift in Sources */,
-				E97E2FD02B6268F600408F63 /* ImagePicker.swift in Sources */,
 				E9489DCF2B65768C00B75080 /* ARViewControllerContainer.swift in Sources */,
 				E9489DCD2B65767900B75080 /* ARViewController.swift in Sources */,
 			);
