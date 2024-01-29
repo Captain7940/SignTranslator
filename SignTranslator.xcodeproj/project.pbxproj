@@ -19,7 +19,6 @@
 		E9D6CE702B52D831004C09AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D6CE6F2B52D831004C09AF /* Preview Assets.xcassets */; };
 		E9D6CE7A2B52D832004C09AF /* SignTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */; };
 		E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */; };
-		E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */; };
 		E9E4DED32B66DB0900BF1964 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
 		E9E4DED42B66DB0900BF1964 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorTests.swift; sourceTree = "<group>"; };
 		E9D6CE7F2B52D832004C09AF /* SignTranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignTranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorUITests.swift; sourceTree = "<group>"; };
-		E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTranslatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +142,6 @@
 			children = (
 				E902D5202B67951A0059026E /* LocationUITest.swift */,
 				E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */,
-				E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */,
 			);
 			path = SignTranslatorUITests;
 			sourceTree = "<group>";
@@ -305,7 +302,6 @@
 				E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */,
 				E9E4DED42B66DB0900BF1964 /* LocationView.swift in Sources */,
 				E902D5212B67951A0059026E /* LocationUITest.swift in Sources */,
-				E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
