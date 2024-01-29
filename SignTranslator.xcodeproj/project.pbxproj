@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E902D51F2B6790370059026E /* LocationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902D51E2B6790370059026E /* LocationTest.swift */; };
+		E902D5212B67951A0059026E /* LocationUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E902D5202B67951A0059026E /* LocationUITest.swift */; };
 		E91F2E4B2B60D98B00D2C135 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
 		E9489DCD2B65767900B75080 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9489DCC2B65767900B75080 /* ARViewController.swift */; };
 		E9489DCF2B65768C00B75080 /* ARViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9489DCE2B65768C00B75080 /* ARViewControllerContainer.swift */; };
@@ -18,6 +20,8 @@
 		E9D6CE7A2B52D832004C09AF /* SignTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */; };
 		E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */; };
 		E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */; };
+		E9E4DED32B66DB0900BF1964 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
+		E9E4DED42B66DB0900BF1964 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91F2E4A2B60D98B00D2C135 /* LocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E902D51E2B6790370059026E /* LocationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTest.swift; sourceTree = "<group>"; };
+		E902D5202B67951A0059026E /* LocationUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUITest.swift; sourceTree = "<group>"; };
 		E91F2E4A2B60D98B00D2C135 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		E9489DCC2B65767900B75080 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		E9489DCE2B65768C00B75080 /* ARViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewControllerContainer.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 		E9D6CE782B52D832004C09AF /* SignTranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				E902D51E2B6790370059026E /* LocationTest.swift */,
 				E9D6CE792B52D832004C09AF /* SignTranslatorTests.swift */,
 			);
 			path = SignTranslatorTests;
@@ -135,6 +142,7 @@
 		E9D6CE822B52D832004C09AF /* SignTranslatorUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E902D5202B67951A0059026E /* LocationUITest.swift */,
 				E9D6CE832B52D832004C09AF /* SignTranslatorUITests.swift */,
 				E9D6CE852B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift */,
 			);
@@ -284,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E4DED32B66DB0900BF1964 /* LocationView.swift in Sources */,
 				E9D6CE7A2B52D832004C09AF /* SignTranslatorTests.swift in Sources */,
+				E902D51F2B6790370059026E /* LocationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D6CE842B52D832004C09AF /* SignTranslatorUITests.swift in Sources */,
+				E9E4DED42B66DB0900BF1964 /* LocationView.swift in Sources */,
+				E902D5212B67951A0059026E /* LocationUITest.swift in Sources */,
 				E9D6CE862B52D832004C09AF /* SignTranslatorUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +517,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFSZHA85LC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
@@ -527,6 +540,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFSZHA85LC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
@@ -548,6 +562,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFSZHA85LC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.7;
@@ -569,6 +584,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AFSZHA85LC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.7;

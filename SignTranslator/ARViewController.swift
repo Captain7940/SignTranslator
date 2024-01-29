@@ -53,17 +53,6 @@ class ARViewController: UIViewController,ARSessionDelegate {
         clearButton.layer.cornerRadius = 6
         clearButton.addTarget(self, action:#selector(clearText), for: .touchUpInside)
 
-//        // Create an HStack to hold the label and button
-//        let hStack = UIStackView(frame: CGRect(x: 20, y: 40, width: view.bounds.width - 40, height: 100))
-//        hStack.axis = .horizontal
-//        hStack.alignment = .center
-//        hStack.distribution = .fill
-//        hStack.spacing = 10
-//
-//        // Add the label and button to the HStack
-//        hStack.addArrangedSubview(textLabel)
-//        hStack.addArrangedSubview(clearButton)
-
         // Add the label and button to the view
         view.addSubview(textLabel)
         view.addSubview(clearButton)
@@ -74,7 +63,6 @@ class ARViewController: UIViewController,ARSessionDelegate {
     }
     
     func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        
         let pixelBuffer = frame.capturedImage
         DispatchQueue.global(qos: .userInitiated).async { [self] in
             let handPoseRequest = VNDetectHumanHandPoseRequest()
@@ -98,7 +86,6 @@ class ARViewController: UIViewController,ARSessionDelegate {
                 makePrediction(handPoseObservation: observation)
             }
         }
-
     }
     
     func makePrediction(handPoseObservation: VNHumanHandPoseObservation) {

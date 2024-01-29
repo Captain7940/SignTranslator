@@ -12,16 +12,16 @@ import SwiftUI
 import Foundation
 
 struct AnnotatedItem : Identifiable {
- let id = UUID()
- let name : String
- var coordinate : CLLocationCoordinate2D
+    let id = UUID()
+    let name : String
+    var coordinate : CLLocationCoordinate2D
     
 }
 struct LocationView: View {
-    @State var nameStr : String = ""
+     @State var nameStr : String = ""
      @State var latStr : String = ""
      @State var lngStr : String = ""
-    @State private var pointOfInterest = [
+     @State internal var pointOfInterest = [
      AnnotatedItem(name: "Professional Sign Language Training Centre", coordinate: .init(latitude: 22.360982503174295, longitude: 114.13275752712616)),
      AnnotatedItem(name: "Centre for Sign Linguistics and Deaf Studies, CUHK", coordinate: .init(latitude: 22.42843632278736, longitude: 114.21326670161059)),
      AnnotatedItem(name: "HKSLBTA", coordinate: .init(latitude: 22.288413340559558, longitude: 114.16108164597804))
@@ -32,21 +32,12 @@ struct LocationView: View {
     var body: some View {
      VStack {
          HStack {
-         TextField("Name", text: $nameStr).textFieldStyle(.roundedBorder)
-         TextField("Lat", text: $latStr).textFieldStyle(.roundedBorder)
-         TextField("Lng", text: $lngStr).textFieldStyle(.roundedBorder)
+             TextField("Name", text: $nameStr).textFieldStyle(.roundedBorder).accessibilityIdentifier("Name")
+         TextField("Lat", text: $latStr).textFieldStyle(.roundedBorder).accessibilityIdentifier("Lat")
+         TextField("Lng", text: $lngStr).textFieldStyle(.roundedBorder).accessibilityIdentifier("Lng")
          Button("Add", action: {
-         let lat = Double(latStr) ?? 0
-         let lng = Double(lngStr) ?? 0
-         let coord = CLLocationCoordinate2D(latitude: lat, longitude: lng)
-         let annotation = AnnotatedItem(name: nameStr, coordinate: coord)
-         self.pointOfInterest.append(annotation)
-
-        //clearup
-        nameStr = ""
-        latStr = ""
-        lngStr = ""
-         })
+         addAnnotation()
+         }).accessibilityIdentifier("Add")
          }.padding()
      Map(coordinateRegion: $region, annotationItems: pointOfInterest) {
      item in
@@ -54,6 +45,13 @@ struct LocationView: View {
      }
      }
      }
+    func addAnnotation() {
+        let lat = Double(latStr) ?? 0
+        let lng = Double(lngStr) ?? 0
+        let coord = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+        let annotation = AnnotatedItem(name: nameStr, coordinate: coord)
+        self.pointOfInterest.append(annotation)
+    }
 }
 
 struct LocationView_Previews: PreviewProvider {
