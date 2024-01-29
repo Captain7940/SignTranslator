@@ -16,7 +16,6 @@ class ARViewController: UIViewController,ARSessionDelegate {
     private(set) var results: String?
     var textLabel: UILabel!
     var clearButton: UIButton!
-    //    var arView: ARView!
     var arScnView: ARSCNView!
     var frameCounter: Int = 0
     let handPosePredictionInterval: Int = 30
